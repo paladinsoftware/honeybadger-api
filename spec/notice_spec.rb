@@ -65,10 +65,6 @@ describe Honeybadger::Api::Notice do
       expect(@notice.backtrace).to eql(backtrace)
     end
 
-    it "should have a deploy object" do
-      expect(@notice.deploy).to_not be_nil
-    end
-
     it "should have a request" do
       expect(@notice.request.empty?).to be_falsey
     end

@@ -19,7 +19,6 @@ module Honeybadger
         @cookies = opts[:cookies]
         @web_environment = opts[:web_environment]
         @backtrace = opts[:backtrace]
-        @deploy = Deploy.new(opts[:deploy])
         @message = opts[:message]
         @request = opts[:request]
         @created_at = opts[:created_at].nil? ? nil : DateTime.parse(opts[:created_at])
